@@ -1,4 +1,7 @@
-﻿using CarRentalMgmt.Server.Models;
+﻿using CarRentalMgmt.Server.Configurations;
+using CarRentalMgmt.Server.Configurations.Entities;
+using CarRentalMgmt.Server.Models;
+using CarRentalMgmt.Shared.Domain;
 using IdentityServer4.EntityFramework.Options;
 using Microsoft.AspNetCore.ApiAuthorization.IdentityServer;
 using Microsoft.EntityFrameworkCore;
@@ -16,6 +19,23 @@ namespace CarRentalMgmt.Server.Data
             DbContextOptions options,
             IOptions<OperationalStoreOptions> operationalStoreOptions) : base(options, operationalStoreOptions)
         {
+        }
+        public DbSet<Vehicle> Vehicles { get; set; }
+        public DbSet<Colour> Colours { get; set; }
+        public DbSet<Make> Makes { get; set; }
+        public DbSet<Model> Models { get; set; }
+        public DbSet<Customer> Customers { get; set; }
+        public DbSet<Booking> Bookings { get; set; }
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            base.OnModelCreating(builder);
+
+            builder.ApplyConfiguration(new ColourSeedConfiguration());
+            builder.ApplyConfiguration(new MakeSeedConfiguration());
+            builder.ApplyConfiguration(new ModelSeedConfiguration());
+            builder.ApplyConfiguration(new RoleSeedConfiguration());
+            builder.ApplyConfiguration(new UserRoleSeedConfiguration());
+            builder.ApplyConfiguration(new UserSeedConfiguration());
         }
     }
 }
