@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31829.152
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarRentalMgmt.Server", "CarRentalMgmt\Server\CarRentalMgmt.Server.csproj", "{9AD93D05-EC0C-4BA2-BD32-9C841195F3AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarRentalMgmt.Server", "CarRentalMgmt\Server\CarRentalMgmt.Server.csproj", "{9AD93D05-EC0C-4BA2-BD32-9C841195F3AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarRentalMgmt.Client", "CarRentalMgmt\Client\CarRentalMgmt.Client.csproj", "{BFE389EC-F87F-4E3D-8CC6-9F7EAA3DA06A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarRentalMgmt.Client", "CarRentalMgmt\Client\CarRentalMgmt.Client.csproj", "{BFE389EC-F87F-4E3D-8CC6-9F7EAA3DA06A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarRentalMgmt.Shared", "CarRentalMgmt\Shared\CarRentalMgmt.Shared.csproj", "{71F7C96E-A8ED-424B-AE49-5325F5335D3B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarRentalMgmt.Shared", "CarRentalMgmt\Shared\CarRentalMgmt.Shared.csproj", "{71F7C96E-A8ED-424B-AE49-5325F5335D3B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
